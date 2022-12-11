@@ -1,0 +1,39 @@
+---
+custom_edit_url: null
+sidebar_position: 135
+---
+# MediaTemplate element
+MediaTeplate element describes information to automatically assign files to cabinets. A maximumum number of cabinets created is 999.
+
+## Parents
+[Package](package.md), [Fragment](fragment.md)
+
+## Attributes
+**CabinetTemplate** (String)
+  : Templated name of the cabinet if some or all of the files stored on the media are in a cabinet file. This name must begin with either a letter or an underscore, contain maximum of five characters and {0} in the cabinet name part and must end three character extension. The default is cab{0}.cab.
+
+**CompressionLevel** (enumeration)
+  : Indicates the compression level for the Media's cabinet. This attribute can only be used in conjunction with the Cabinet attribute. The default is 'mszip'. This attribute's value must be one of the following:
+- *high*
+- *low*
+- *medium*
+- *mszip*
+- *none*
+
+**DiskPrompt** (String)
+  : The disk name, which is usually the visible text printed on the disk. This localizable text is used to prompt the user when this disk needs to be inserted. This value will be used in the "[1]" of the DiskPrompt Property. Using this attribute will require you to define a DiskPrompt Property.
+
+**EmbedCab** ([YesNoTypeUnion](yesnotype.md 'Values of this type will either be "yes"/"true" or "no"/"false".'))
+  : Instructs the binder to embed the cabinets in the product if 'yes'.
+
+**MaximumCabinetSizeForLargeFileSplitting** (xs:int)
+  : Maximum size of cabinet files in megabytes for large files. This attribute is used for packaging files that are larger than MaximumUncompressedMediaSize into smaller cabinets. If cabinet size exceed this value, then setting this attribute will cause the file to be split into multiple cabinets of this maximum size. For simply controlling cabinet size without file splitting use MaximumUncompressedMediaSize attribute. Setting this attribute will disable smart cabbing feature for this Fragment / Package. Setting WIX_MCSLFS environment variable can be used to override this value. Minimum allowed value of this attribute is 20 MB. Maximum allowed value and the Default value of this attribute is 2048 MB (2 GB).
+
+**MaximumUncompressedMediaSize** (xs:int)
+  : Size of uncompressed files in each cabinet, in megabytes. WIX_MUMS environment variable can be used to override this value. Default value is 200 MB.
+
+**VolumeLabel** (String)
+  : The label attributed to the volume. This is the volume label returned by the GetVolumeInformation function. If the SourceDir property refers to a removable (floppy or CD-ROM) volume, then this volume label is used to verify that the proper disk is in the drive before attempting to install files. The entry in this column must match the volume label of the physical media.
+
+
+[Edit the schema for this page](https://github.com/wixtoolset/web/blob/master/src/xsd4/wix.xsd)

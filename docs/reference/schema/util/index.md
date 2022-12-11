@@ -1,0 +1,56 @@
+---
+custom_edit_url: null
+sidebar_position: 17
+---
+# Util schema
+The source code schema for the WiX Toolset Utility Extension.
+## Target namespace
+http://wixtoolset.org/schemas/v4/wxs/util
+## Elements
+- [BroadcastEnvironmentChange](broadcastenvironmentchange.md)
+- [BroadcastSettingChange](broadcastsettingchange.md)
+- [CheckRebootRequired](checkrebootrequired.md)
+- [CloseApplication](closeapplication.md)
+- [ComponentSearch](componentsearch.md)
+- [ComponentSearchRef](componentsearchref.md)
+- [DirectorySearch](directorysearch.md)
+- [DirectorySearchRef](directorysearchref.md)
+- [EventManifest](eventmanifest.md)
+- [EventSource](eventsource.md)
+- [ExitEarlyWithSuccess](exitearlywithsuccess.md)
+- [FailWhenDeferred](failwhendeferred.md)
+- [FileSearch](filesearch.md)
+- [FileSearchRef](filesearchref.md)
+- [FileShare](fileshare.md)
+- [FileSharePermission](filesharepermission.md)
+- [FormatFile](formatfile.md)
+- [Group](group.md)
+- [GroupRef](groupref.md)
+- [InternetShortcut](internetshortcut.md)
+- [PerfCounter](perfcounter.md)
+- [PerfCounterManifest](perfcountermanifest.md)
+- [PerformanceCategory](performancecategory.md)
+- [PerformanceCounter](performancecounter.md)
+- [PermissionEx](permissionex.md)
+- [ProductSearch](productsearch.md)
+- [ProductSearchRef](productsearchref.md)
+- [QueryWindowsDirectories](querywindowsdirectories.md)
+- [QueryWindowsDriverInfo](querywindowsdriverinfo.md)
+- [QueryWindowsSuiteInfo](querywindowssuiteinfo.md)
+- [QueryWindowsWellKnownSIDs](querywindowswellknownsids.md)
+- [RegistrySearch](registrysearch.md)
+- [RegistrySearchRef](registrysearchref.md)
+- [RemoveFolderEx](removefolderex.md)
+- [RestartResource](restartresource.md)
+- [ServiceConfig](serviceconfig.md)
+- [TouchFile](touchfile.md)
+- [User](user.md)
+- [WaitForEvent](waitforevent.md)
+- [WaitForEventDeferred](waitforeventdeferred.md)
+- [WindowsFeatureSearch](windowsfeaturesearch.md)
+- [WindowsFeatureSearchRef](windowsfeaturesearchref.md)
+- [XmlConfig](xmlconfig.md)
+- [XmlFile](xmlfile.md)
+## Types
+- [PerformanceCounterLanguageType](performancecounterlanguagetype.md)
+- [PerformanceCounterTypesType](performancecountertypestype.md)
